@@ -220,3 +220,14 @@ class StepperMotor:
         self._update_coils(microstepping=style == MICROSTEP)
 
         return self._current_microstep
+
+    # positive angle is ccwise
+    def motor_move(self, angle){
+        steps = abs(angle / 1.8)
+        if angle > 0:
+            for i in range(0,steps):
+                onestep(direction=FORWARD)
+        else:
+            for i in range(0,steps):
+                onestep(direction=BACKWARD)
+    }
