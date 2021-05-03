@@ -58,6 +58,7 @@ To install in a virtual environment in your current project:
 
 Contributing
 ============
+Tweaked by misha for turret project
 
 Contributions are welcome! Please read our `Code of Conduct
 <https://github.com/adafruit/Adafruit_CircuitPython_motor/blob/master/CODE_OF_CONDUCT.md>`_
